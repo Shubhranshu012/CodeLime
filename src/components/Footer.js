@@ -3,7 +3,7 @@ import React from 'react'
 export default function footer() {
   return (
     <div class="mt-[5vh] text-center mb-[5vh]">
-      <a href="/Temp" class="flex items-center justify-center mb-5 text-2xl font-semibold text-[#FFFCE1]">
+      <a href="/" class="flex items-center justify-center mb-5 text-2xl font-semibold text-[#FFFCE1]">
         <img src="Logo1.png" class="h-12 mr-3 sm:h-9 text-[#FFFCE1]" alt="Landwind Logo" />
         CodeLime
       </a>

@@ -1,9 +1,9 @@
 # CodeLime
 
 ## Overview
-Welcome to our **Online Coding Platform**, a web-based tool designed to assist programmers in practicing coding, generating programming questions, and executing their code across various languages. The platform supports a wide array of programming languages, including C, C++, Java, JavaScript, Python, Swift, Rust, and more. We have integrated **Google Gemini** for question generation and leveraged external services to compile and run code.
-Also
-The WebApp Include Online Compilers to Compile Code in multiple Languages Such as C, C++, Java, JavaScript, Python, Swift, Rust, HTML, CSS and etc.
+- Welcome to our **Online Coding Platform**, a web-based tool designed to assist programmers in practicing coding, generating programming questions, and executing their code across various languages. The platform supports a wide array of programming languages, including C, C++, Java, JavaScript, Python, Swift, Rust, and more. We have integrated **Google Gemini** for question generation and leveraged external services to compile and run code.
+
+- The WebApp also Include Online Compilers to Compile Code in multiple Languages Such as C, C++, Java, JavaScript, Python, Swift, Rust, HTML, CSS and etc.
 
 ### Key Features
 1. **Generate Coding Questions**:
@@ -83,56 +83,58 @@ Before running this application locally, ensure you have the following tools ins
 
 
 ### 1. Clone the Repository
-git clone https://github.com/Shubhranshu012/CodeLime.git
-cd CODING
+- git clone https://github.com/Shubhranshu012/CodeLime.git
+- cd CODING
 
 ### 2. Install Dependencies
-npm install
+- npm install
 
 ### 3. Run the Development Server
-npm run dev
-Your application will be available at http://localhost:3000.
+- npm run dev
+- Your application will be available at http://localhost:3000.
 
 ### 4. Set Up External Compilation API
 You will need to configure an external compiler API to handle code compilation for various languages. Some popular services include:
-    a.JDoodle
-    b.Repl.it
-    c.Sphere Engine
+- JDoodle
+- Repl.it
+- Sphere Engine
 After signing up and obtaining an API key, configure the backend to make API calls to the respective service.
 
 ### 5. Build and Deploy for Production
 To build the application for production:
-->npm run build
-->Deploy the platform using services like Vercel, Netlify, or any cloud platform of your choice.
+- npm run build
+- Deploy the platform using services like Vercel, Netlify, or any cloud platform of your choice.
 
 ### Usage Instructions
-1.For practicing a Coding Question:
 
-->Go to the "Pratice" section.
-->Select your preferred language and difficulty level.
-->Google Gemini will generate a question based on your preferences.
-->Write, Run your Code
-->Once you're confident in your solution, click "Submit Code" for evaluation.
+1. **For practicing a Coding Question:**
+   - Go to the "Practice" section.
+   - Select your preferred language and difficulty level.
+   - Google Gemini will generate a question based on your preferences.
+   - Write and run your code.
+   - Once you're confident in your solution, click "Submit Code" for evaluation.
 
-2.Select your language and start coding.
-->Select the Language You want to test.
-->Use the in-browser code editor and write your code.
-->Click "Run Code" to compile and execute the code.
-->check the output.
+2. **For running code in different languages:**
+   - Select the language you want to test.
+   - Use the in-browser code editor to write your code.
+   - Click "Run Code" to compile and execute the code.
+   - Check the output.
 
 ### Contributing
 We welcome contributions to the platform! To contribute:
-->Fork the repository.
-->Clone your forked repository locally.
-->Create a new branch for your changes.
-->Make your changes and commit them with descriptive messages.
-->Push your changes to your forked repository.
-->Submit a pull request with a detailed description of the changes.
+
+- Fork the repository.
+- Clone your forked repository locally.
+- Create a new branch for your changes.
+- Make your changes and commit them with descriptive messages.
+- Push your changes to your forked repository.
+- Submit a pull request with a detailed description of the changes.
 
 
 ### Acknowledgments
-->Next.js: For building the modern React app with server-side rendering and static site generation.
-->Google Gemini: For generating dynamic and diverse coding challenges.
-->External Compiler APIs: For enabling code compilation across various languages.
-->Tailwind CSS: For fast and responsive styling in the frontend.
-->Monaco Editor: For providing an advanced, feature-rich in-browser code editor.
+
+- **Next.js**: For building the modern React app with server-side rendering and static site generation.
+- **Google Gemini**: For generating dynamic and diverse coding challenges.
+- **External Compiler APIs**: For enabling code compilation across various languages.
+- **Tailwind CSS**: For fast and responsive styling in the frontend.
+- **Monaco Editor**: For providing an advanced, feature-rich in-browser code editor.
