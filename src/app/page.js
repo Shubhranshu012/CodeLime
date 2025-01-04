@@ -3,6 +3,7 @@
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Image from 'next/image';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -282,8 +283,8 @@ const HorizontalScroll = () => {
 
     return (
         <>
-            <div className='Loader absolute bg-[#0E100F] h-[100vh] mt-[-10vh] z-10 w-[98.7vw] flex justify-center items-center flex-col'>
-                <img src="Logo1.png" alt="" className='mb-[5vh]' />
+            <div className='Loader z-[100000] absolute bg-[#0E100F] h-[100vh] mt-[-10vh]  w-[98vw] flex justify-center items-center flex-col'>
+                <Image src="/Logo1.png" alt="" className='mb-[5vh]' width={150} height={150}/>
                 <h1 className='text-5xl transform-style-3d'>
                     <span class="Logo transform-style-3d inline-block">C</span>
                     <span class="Logo transform-style-3d inline-block">o</span>
@@ -390,7 +391,7 @@ const HorizontalScroll = () => {
                             <p className="p-[50px] text-2xl">From code practice to instant compilation, your journey to mastery starts here—any language, anytime, anywhere.</p>
                         </div>
                         <div className="relative flex items-center w-[50%] justify-center">
-                            <img className="Ring absolute top-20 left-20" src="circle-448f73d1.png" alt="" />
+                            <Image src="/circle-448f73d1.png" alt="" className="Ring absolute top-20 left-20" width={150} height={150}/>
                             <svg width="42" height="52" className="Timmer absolute left-20 top-[45%]" viewBox="0 0 52 62" fill="none" xmlns="http://www.w3.org/2000/svg" >
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M29.2532 28.1943C27.7212 29.751 27.7212 32.249 29.2532 33.8057L50.3023 55.1943C52.7911 57.7232 50.9996 62 47.4513 62H26H4.54865C1.00044 62 -0.79113 57.7232 1.69768 55.1943L22.7468 33.8057C24.2788 32.249 24.2788 29.7511 22.7468 28.1943L1.69769 6.80572C-0.791119 4.27676 1.00044 5.24575e-07 4.54865 8.34769e-07L26 2.71011e-06L47.4514 4.58544e-06C50.9996 4.89564e-06 52.7911 4.27676 50.3023 6.80572L29.2532 28.1943Z" fill="url(#paint0_linear_2080_57096)"></path>
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M29.2532 28.1943C27.7212 29.751 27.7212 32.249 29.2532 33.8057L50.3023 55.1943C52.7911 57.7232 50.9996 62 47.4513 62H26H4.54865C1.00044 62 -0.79113 57.7232 1.69768 55.1943L22.7468 33.8057C24.2788 32.249 24.2788 29.7511 22.7468 28.1943L1.69769 6.80572C-0.791119 4.27676 1.00044 5.24575e-07 4.54865 8.34769e-07L26 2.71011e-06L47.4514 4.58544e-06C50.9996 4.89564e-06 52.7911 4.27676 50.3023 6.80572L29.2532 28.1943Z" fill="url(#pattern-home-animate-timer-0)"></path>
@@ -564,11 +565,11 @@ const HorizontalScroll = () => {
                 </div>
                 <div className='h-screen flex flex-row justify-center items-center overflow-hidden mt-[10vh]'>
                     <div className='w-[50%]'>
-                        <img src="compiler.png" alt="" />
+                        <Image src="/compiler.png" alt="" className='mb-[5vh]' width={150} height={150} layout="responsive"/>
                     </div>
                     <div className='w-[50%] pl-[5vw]'>
                         <p className='text-3xl pt-10 mb-4 text-[#9D95FF]'>Practice with our Online Compilers</p>
-                        <p className='mb-8'>We believe coding should be accessible to all. So we made our own compilers for web and mobile. And it's free!</p>
+                        <p className='mb-8'>We believe coding should be accessible to all. So we made our own compilers for web and mobile. And it&apos;s free!</p>
                         <div className='flex flex-row'>
                             <div className='flex flex-col w-[50%]'>
                                 <a href='/Compiler?Language=c%2B%2B' class="bg-transparent border-[1px] border-gray-400 rounded-md w-[20vw] pt-[5px] pb-[5px] mb-[10px] flex flex-col justify-center items-center">

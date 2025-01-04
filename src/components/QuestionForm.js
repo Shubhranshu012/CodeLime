@@ -24,8 +24,8 @@ const QuestionForm = () => {
   };
 
   return (
-    <div className='w-[100%] h-[100%] flex justify-center items-center text-center'>
-      <form onSubmit={handleSubmit} className='w-[70%] bg-[#333333] h-[80vh] flex flex-col justify-between p-[8%] rounded-lg mt-[1vh]'>
+    <div className='w-[100%] h-[100vh] flex justify-center text-center'>
+      <form onSubmit={handleSubmit} className='w-[70%] bg-[#333333] h-[70vh] md:h-[80vh] lg:h-[80vh] flex flex-col justify-between p-[8%] rounded-lg mt-[1vh]'>
         <h1 className='text-xl flex justify-center font-semibold mb-[3vh]'>SELECT TO GENERATE A QUESTION</h1>
         <label className='flex justify-center'>
           Language:

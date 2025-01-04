@@ -1,5 +1,6 @@
 "use client"
 import gsap from 'gsap';
+import Image from 'next/image';
 import React, { useState } from 'react';
 import { useEffect } from 'react';
 
@@ -26,11 +27,13 @@ function Navbar() {
     };
 
     return (
-        <nav className="h-[10vh] bg-[#0F0F0F] border-gray-200 dark:border-gray-600 dark:bg-gray-900 z-40">
+        <nav className="h-[10vh] bg-[#0F0F0F] border-gray-200 dark:border-gray-600 dark:bg-gray-900">
             <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-[9px]">
                 <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="Logo1.png" className="image-nav h-8 mt-[5px]" alt="CodeLIme Logo" />
-                    <span className="self-center text-2xl  font-semibold whitespace-nowrap text-[#FFFCE1]">CodeLime</span>
+                    <div className=" h-8 w-8 mt-[4px]">
+                        <Image src="/Logo1.png" className='image-nav' alt="" width={10} height={10} layout="responsive" />
+                    </div>
+                    <span className="ml-[-5px] self-center text-2xl  font-semibold whitespace-nowrap text-[#FFFCE1]">CodeLime</span>
                 </a>
                 <button
                     onClick={toggleMenu}
@@ -54,7 +57,7 @@ function Navbar() {
                                 onClick={toggleDropdown}
                                 className="flex items-center justify-between w-full py-2 px-3 rounded md:w-auto  md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
                             >
-                                Compiler's
+                                Compiler&apos;s
                                 <svg className="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
                                 </svg>
