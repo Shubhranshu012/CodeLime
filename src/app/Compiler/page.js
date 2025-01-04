@@ -3,9 +3,9 @@ import React from 'react'
 import { useSearchParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import Editor from '@monaco-editor/react';
-import { AlarmClockCheck, CloudUpload, NotebookText, Pause, Play, RefreshCw, RotateCcw } from 'lucide-react';
+import {NotebookText, Play} from 'lucide-react';
 
-export default function page() {
+export default function Page() {
     const searchParams = useSearchParams();
     const language = searchParams.get('Language');
     const [loader, setLoader] = useState(false);
