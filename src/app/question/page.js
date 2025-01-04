@@ -2,10 +2,10 @@
 import { useSearchParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import CodeEditor from '../../components/Editor';
-import { AlarmClockCheck, MessageCircleQuestion, CloudUpload, NotebookText, Pause, Play, RefreshCw, RotateCcw } from 'lucide-react';
-import { useRef } from 'react';
+import { MessageCircleQuestion, CloudUpload, NotebookText,Play,} from 'lucide-react';
+import { Suspense } from 'react';
 import TimerComponent from '@/components/TimerComponent';
-export default function QuestionPage() {
+const QuestionPage = () => {
   const searchParams = useSearchParams();
   const language = searchParams.get('language');
   const difficulty = searchParams.get('difficulty');
@@ -228,5 +228,13 @@ export default function QuestionPage() {
         )}
       </div>
     </div>
+  );
+}
+
+export default function Page() {
+  return (
+    <Suspense fallback={<div className='h-[100vh] bg-[#1E1E1E] flex justify-center items-center'>Loading Question Page...</div>}>
+      <QuestionPage />
+    </Suspense>
   );
 }

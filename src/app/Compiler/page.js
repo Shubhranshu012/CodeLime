@@ -4,8 +4,9 @@ import { useSearchParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import Editor from '@monaco-editor/react';
 import {NotebookText, Play} from 'lucide-react';
+import { Suspense } from 'react';
 
-export default function Page() {
+const CompilerPage = () =>  {
     const searchParams = useSearchParams();
     const language = searchParams.get('Language');
     const [loader, setLoader] = useState(false);
@@ -186,3 +187,10 @@ export default function Page() {
         </div>
     )
 }
+export default function Page() {
+    return (
+      <Suspense fallback={<div className='h-[100vh] bg-[#1E1E1E] flex justify-center items-center'> Loading page...</div>}>
+        <CompilerPage />
+      </Suspense>
+    );
+  }

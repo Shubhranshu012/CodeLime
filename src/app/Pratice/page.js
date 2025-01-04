@@ -34,7 +34,7 @@ export default function Home() {
 
   return (
     <>
-    <div className='Loader z-[100000] absolute bg-[#0E100F] h-[100vh] mt-[-10vh] z-10 w-[98vw] flex justify-center items-center flex-col'>
+    <div className='Loader z-[100000] absolute bg-[#0E100F] h-[100vh] mt-[-10vh] w-[98vw] flex justify-center items-center flex-col'>
                 <Image src="/Logo1.png" alt="" className='mb-[5vh]' width={150} height={150}/>
                 <h1 className='text-5xl transform-style-3d'>
                     <span class="Logo transform-style-3d inline-block">C</span>
